@@ -39,11 +39,11 @@ def CropImage(image, scale):
     resized_cropped = cv2.resize(cropped, (width, height))
 
     if cv2.waitKey(1) & 0xFF == ord("o"):
-        scale += 1  # zoom out 5
+        scale += 1  # zoom out 1
         print(scale)
 
     if cv2.waitKey(1) & 0xFF == ord("i"):
-        scale -= 1  # zoom in 5
+        scale -= 1  # zoom in 1
         print(scale)
     
     return resized_cropped, scale
